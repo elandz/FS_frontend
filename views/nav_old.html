@@ -1,0 +1,73 @@
+<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/friend-send-logo.jpg" alt="Friend Send Logo">
+        </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse faq-adj6" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="pos-rel">
+                <a href="#" translate="nav.send">Send something</a>
+                <span class="notify">5</span>
+            </li>
+            <li>
+                <a href="#" translate="nav.deliver">Deliver something</a>
+                <span class="notify2">5</span>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" translate="nav.language">Language <b class="glyphicon glyphicon-menu-down c-adj2"></b></a>
+                <ul class="dropdown-menu lang-popup">
+                    <li>
+                        <span class="eng" translate="nav.english" ng-click="selectLanguage('en')">English</span>
+                    </li>
+                    <li>
+                        <span class="spn" translate="nav.spanish" ng-click="selectLanguage('sp')">Spanish</span>
+                    </li>
+                    <!--li>
+                        <a class="eng" href="#"><img src="images/usa-flag.jpg" width="32">English</a>
+                    </li>
+                    <li>
+                        <a class="spn" href="#"><img src="images/spanish.jpg" width="32">Spanish</a>
+                    </li-->
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a ng-if="loggedInUser == '' " href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <div class="faq-adj8">
+                        <span class="glyphicon glyphicon-user faq-adj7"></span>
+                    </div> Login <b class="glyphicon glyphicon-menu-down c-adj2"></b>
+                    
+                    
+                </a>
+                 <a ng-if="loggedInUser != '' " href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <div class="faq-adj8">
+                        <span class="glyphicon glyphicon-user faq-adj7"></span>
+                    </div> {{loggedInUser.email}} <b class="glyphicon glyphicon-menu-down c-adj2"></b>
+                </a>
+                <ul class="dropdown-menu login-popup">
+                    <li ng-if="loggedInUser != '' ">
+                   		<button class="btn btn-default c-adj1"  ng-click="logout()">Log out</button>
+                   	 </li>
+                    
+                    <li ng-if="loggedInUser == '' ">
+                        <form  class="signin">
+                            <input type="text" placeholder="Your Email" id="youremail" ng-model="user.email"  class="form-control width-adj">
+                            <input type="password" placeholder="Password" id="password" ng-model="user.password"  class="form-control">
+                            <button class="btn btn-default c-adj1"  ng-click="login()">LOGIN</button>
+                        </form>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>

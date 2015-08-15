@@ -1,0 +1,312 @@
+
+
+/*Top-Nav Responsive Styles starts*/
+@media screen and (min-width: 700px), (max-width: 800px){
+   nav.navbar .navres { min-width: 100%; max-width: 100%; }
+   
+   /*.frndsnd-logo { max-width: 150px; }*/
+   /*.frndsnd-logo img { max-width: 100%; }*/
+   
+   .navbar-toggle + a.frndsnd-logo { margin-left: 15px; }
+}
+
+@media screen and (min-width: 700px), (max-width: 735px){
+   .frndsnd-logo img { max-width: 100%; }
+   
+   .navbar-toggle + a.frndsnd-logo { margin-left: 15px; max-width: 150px; }
+}
+
+@media screen and (min-width: 700px), (max-width: 5000px){
+    .navbar-nav { margin: 7.5px 0px 7.5px 0px; }
+    .navbar-inverse .navbar-nav > li > a { padding: 30px 15px; }
+    
+    .navbar-toggle + a.frndsnd-logo { margin-left: 15px; margin-top: 30px;  max-width: 186px; }
+}
+
+@media screen and (max-width: 691px){
+    .navbar-inverse .navbar-nav > li > a { padding: 15px 0px; }
+    .navbar-inverse .navbar-nav > li > a.login  { padding: 15px 0px; }
+    .navbar-inverse .navbar-nav > li > a.login span.faq-adj7 { top: 15px; }
+    
+    /*.navbar-inverse .navbar-nav > li:nth-child(odd) { background-color: #aaa; }*/
+    
+    ul.login-popup li form.signin { width: 100%; padding: 15px 0px; margin-top: -10px; }
+    ul.login-popup li form.signin input,
+    ul.login-popup li form.signin button { width: 100%; }
+}
+
+/*@media screen and (min-width: 700px), (max-width: 691px){
+	.navbar-collapse .navbar-nav { margin: 7.5px 10px 7.5px 0px; }
+	.navbar-collapse .navbar-nav > li > a { padding: 15px; }
+}*/
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse { max-height: 900px; }
+/*Top-Nav Responsive Styles ENDs...*/
+
+/*Home-Page Top Carousel--Send-Stuff Anywhere Slider Responsive Styles Starts*/
+@media screen and (max-width: 991px) {
+    
+    #myCarousel .carousel-caption{
+        padding-left: 25px;
+        padding-right: 25px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        top: 18%;
+    }
+    
+    #myCarousel .carousel-caption h2{ font-size: 35pt !important; }
+    #myCarousel .carousel-caption p{ font-size: 21pt !important; }
+}
+
+@media screen and (max-width: 600px) {
+    #myCarousel .carousel-caption h2{ font-size: 21pt !important; max-width: 90%; float: none; margin: 0px auto; }
+    #myCarousel .carousel-caption p { font-size: 13pt !important; max-width: 90%; float: none; margin: 0px auto; margin-top: 15px; }
+}
+
+@media screen and (max-width: 767px) {
+    #myCarousel.carousel { min-height: 900px !important; }
+    #myCarousel2.carousel { min-height: 750px !important; }
+    
+    .carousel-control .icon-next { /*left:  25%;*/ top: 25%; }
+    .carousel-control .icon-prev { /*right: 25%;*/ top: 25%; }
+    
+    header#myCarousel span.icon-next { font-size: 50px; }
+    header#myCarousel span.icon-prev { font-size: 50px; }
+}
+
+/*Home-Page Top Carousel--Send-Stuff Anywhere Arrows*/
+@media screen and (max-width: 850px) {
+    /*.carousel-control .icon-next:before { left:  25%; }
+    .carousel-control .icon-prev:before { right: 25%; }*/
+}
+/*Home Page Top carousel arrows Responsive styles*/
+@media screen and (max-width: 691px) {
+    
+    .carousel-control .icon-next { top: 25%; }
+    .carousel-control .icon-prev { top: 25%; }
+    
+    .carousel-control .icon-next { /*left:  25%;*/ font-size: 40px;/*100px;*/ }
+    .carousel-control .icon-prev { /*right: 25%;*/ font-size: 40px;/*100px;*/ }
+    
+    header#myCarousel span.icon-next { font-size: 40px; }
+    header#myCarousel span.icon-prev { font-size: 40px; }
+}
+
+@media screen and (max-width: 450px) {
+    header#myCarousel span.icon-next { margin-right: 5px; }
+    header#myCarousel span.icon-prev { margin-right: 5px; }
+}
+/*Home-Page Top Carousel--Send-Stuff Anywhere Slider Responsive Styles ENDs...*/
+
+/*Home-Page Bottom Carousel--Become a Courier Responsive Styles Starts*/
+@media screen and (max-width: 991px) {
+    
+    #myCarousel2 .carousel-caption{ padding-left: 25px; padding-right: 25px; left: 0px; width: 100%; text-align: center; }
+    
+    #myCarousel2 .carousel-caption h2{ font-size: 35pt; }
+    #myCarousel2 .carousel-caption p{ font-size: 21pt; }
+}
+/*Home-Page Bottom Carousel--Become a Courier Responsive Styles ENDs...*/
+
+
+/*Home-Page Search Fields > Top Deliver-To-City and Below Travel-to-City Responsive Styles Starts*/
+header#myCarousel.carousel .search { position: absolute; bottom: 0px; }
+header#myCarousel.carousel .carousel-indicators { position: relative; top: -75px; }
+header#myCarousel.carousel .search .search_field .send-within-city { color: #fff; margin-top: -85px; cursor: pointer; }
+header#myCarousel.carousel .search .search_field .send-within-city:hover { text-decoration: underline; }
+
+.search .search_field { min-width: 195px !important; }
+.search .search_field button.go_btn { width: 100%; }
+#delivery-custom-style.search_field { min-width: 165px !important; }
+
+/*Home-Page Bottom Search Travel-To-City Responsive Styles*/
+header#myCarousel2.carousel .search { position: absolute; bottom: 0px; }
+header#myCarousel2.carousel .carousel-indicators { position: relative; top: -75px; }
+header#myCarousel2.carousel .search .search_field .share-your-route { color: #fff; margin-top: -15px; cursor: pointer; }
+header#myCarousel2.carousel .search .search_field .share-your-route:hover { text-decoration: underline; }
+
+#abc.travel-custom-style.search_field { min-width: 165px !important; }
+
+@media screen and (max-width: 767px) {
+    #delivery-custom-style.search_field { width: auto; }
+    #delivery-custom-style.search_field select { width: 100% !important; }
+    
+    #abc.travel-custom-style.search_field { width: auto; }
+    #abc.travel-custom-style.search_field select { width: 100% !important; }
+}
+
+@media screen and (max-width: 800px) { .top-search-go-button-login-popup { left: 30%; } }
+@media screen and (max-width: 650px) { .top-search-go-button-login-popup { left: 25%; } }
+@media screen and (max-width: 550px) { .top-search-go-button-login-popup { left: 20%; max-width: 275px; padding: 10px 15px 0px 15px; margin-bottom: 10px; } }
+@media screen and (max-width: 425px) { .top-search-go-button-login-popup { left: 17%; max-width: 225px; } }
+
+/*Home Page Bottom carousel arrows Responsive styles*/
+@media screen and (max-width: 691px) {
+    
+    header#myCarousel2 .carousel-control .icon-next { top: 25%; }
+    header#myCarousel2 .carousel-control .icon-prev { top: 25%; }
+    
+    header#myCarousel2 .carousel-control .icon-next { /*left:  25%;*/ font-size: 40px;/*100px;*/ }
+    header#myCarousel2 .carousel-control .icon-prev { /*right: 25%;*/ font-size: 40px;/*100px;*/ }
+}
+
+@media screen and (max-width: 450px) {
+    header#myCarousel2 .carousel-control .icon-next { margin-right: 5px; }
+    header#myCarousel2 .carousel-control .icon-prev { margin-right: 5px; }
+}
+
+
+@media screen and (max-width: 1079px) and (min-width: 970px) {
+}
+/*Home-Page Search Fields > Top Deliver-To-City and Below Travel-to-City Responsive Styles ENDs...*/
+
+
+/*Home-Page Shipment Carousel Arrows Responsive Styles STARTs....*/
+@media screen and (max-width: 800px) {
+   #items-shipment-carousel #owl-btn-prev { background-image: none; font-size: 45px !important; width: 45px; text-align: left; left: 5px; }
+   #items-shipment-carousel #owl-btn-next { background-image: none; font-size: 45px !important; width: 45px; text-align: right; right: 5px; }
+}
+
+@media screen and (max-width: 600px) {
+    #items-shipment-carousel #owl-btn-prev { background-image: none; font-size: 35px !important; width: 35px; text-align: left; left: 3px; }
+    #items-shipment-carousel #owl-btn-next { background-image: none; font-size: 35px !important; width: 35px; text-align: right; right: 3px; }
+}
+/*Home-Page Shipment Carousel Arrows Responsive Styles ENDs....*/
+/********Home-Page Responsive Styles ENDs....********/
+
+/*Sending Page Responsive Styles STARTs...*/
+@media screen and (max-width: 850px) {
+    
+    #sending-titles .carousel-caption { top: 30%; }
+    
+    #sending-titles .top-green-h2 { padding-left: 30px; font-size: 43px; }
+    #sending-titles .top-green-p { padding-left: 30px; font-size: 23px; }
+}
+/*Sending Page Responsive Styles ENDs...*/
+
+
+/*Profile Page Responsive Styles STARTs....*/
+@media screen and (max-width: 991px) {
+    
+    .profile-left-column {  }
+    
+    .profile-right-column { max-width: 350px; margin-left: 50px; }
+    
+    .profile-page-content .profile-right-column label         { padding-left: 20px; }
+    .profile-page-content .profile-right-column .form-control { padding-left: 5px; }
+    
+    .profile-page-content .profile-right-column .marbot-twenty { margin-bottom: 0px; }
+
+    .profile-page-content .profile-right-column .email-notification { margin-bottom: 5px; }
+    .profile-page-content .profile-right-column .change-password { }
+    .profile-page-content .profile-right-column .change-password a.cpassword { float: left; margin-top: 10px; }
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+    .profile-page-content .browse-btn { max-width: 100%; margin-left: 0px; width: 100%; }
+    
+    .profile-right-column { max-width: 100%; margin-left: 0px; }
+    
+}
+/*Profile Page Responsive Styles ENDs....*/
+
+
+/*NewShipment Page Responsive Styles STARTs...*/
+@media screen and (max-width: 991px) {
+    
+    .newshipment-left-column {  }
+    
+    .newshipment-right-column  { max-width: 350px; margin-left: 50px; }
+    
+    .new-shipment .newshipment-right-column label         { padding-left: 20px; }
+    
+    .new-shipment .newshipment-right-column .marbot-twenty { margin-bottom: 0px; }
+
+    .new-shipment .newshipment-right-column .email-notification { margin-bottom: 5px; }
+    .new-shipment .newshipment-right-column .change-password {  }
+    .new-shipment .newshipment-right-column .change-password a.cpassword { float: left; margin-top: 10px; }
+    
+    .new-shipment .up-btn { padding: 15px; }
+    .new-shipment .newshipment-left-column img { padding-left: 0px; }
+}
+
+    .new-shipment .newshipment-left-column img { padding: 0px; }
+    .new-shipment .newshipment-left-column .up-btn { max-width: 100%; margin-left: 0px; width: 100%; }
+
+@media screen and (max-width: 767px) {
+    .new-shipment .up-btn { max-width: 100%; margin-left: 0px; width: 100%; }
+    .newshipment-right-column { max-width: 100%; margin-left: 0px; }
+}
+
+@media screen and (max-width: 400px) {
+    .newshipment-left-column img { max-width: 225px; }
+}
+/*NewShipment Page Responsive Styles ENDs...*/
+
+
+/*CreateShipment Page Responsive Styles STARTs...*/
+
+.create-shipment .shipment-cotent-left img { padding: 0px; }
+.create-shipment .shipment-cotent-left .up-btn { max-width: 100%; margin-left: 0px; width: 100%; }
+
+/*CreateShipment Page Responsive Styles ENDs...*/
+
+
+/*CreateRoute Page Responsive Styles STARTs...*/
+
+@media screen and (max-width: 991px) {
+    
+    .createroute .createroute-left-column {  }
+    
+    .createroute .createroute-right-column { max-width: 350px; margin-left: 50px; }
+    
+    .createroute .createroute-right-column label         { padding-left: 20px; }
+    
+    .createroute .createroute-right-column .marbot-twenty { margin-bottom: 0px; }
+        
+}
+
+@media screen and (max-width: 767px) {
+        
+    .createroute .createroute-right-column { max-width: 100%; margin-left: 0px; }
+    
+}
+/*CreateRoute Page Responsive Styles ENDs...*/
+
+
+/*Footer Responsive Styles STARTs...*/
+footer .footer-social { min-height: 60px; }
+
+@media screen and (max-width: 768px) {
+    footer .footer-links span:first-child { padding-left: 0px; }
+}
+
+@media screen and (max-width: 500px) {
+    footer .footer-content { padding: 0px; }
+}
+
+/*Footer Responsive Styles ENDs...*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="utf-8" />
+<title>Angular App</title>
+<meta name="description" content="Angular App" />
+<!-- meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" / -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google font -->
+<link
+	href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,500,700,800'
+	rel='stylesheet' type='text/css'>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/custom.css" rel="stylesheet">
+
+<!-- Custom Select boxes -->
+<link rel="stylesheet" href="css/bootstrap-select.css">
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- Vendors -->
+<script src="js/vendors/jquery/jquery.min.js"></script>
+<script src="js/vendors/angular/angularjs-min.js"></script>
+
+<script src="js/vendors/angular/angular-cookies/angular-cookies.js"></script>
+<script src="js/vendors/angular/ngstorage/ngStorage.js"></script>
+
+<script src="js/vendors/angular/angular-resource/angular-resource.js"></script>
+<script src="js/vendors/angular/angular-ui-router/angular-ui-router.js"></script>
+<script src="js/vendors/angular/angular-translate/angular-translate.js"></script>
+<script src="js/vendors/angular/angular-translate/loader-static-files.js"></script>
+<script src="js/vendors/angular/angular-translate/storage-cookie.js"></script>
+<script src="js/vendors/angular/angular-translate/storage-local.js"></script>
+<script src="js/vendors/angular/angular-ui-utils/ui-utils.js"></script>
+<script src="js/vendors/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="revslider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="revslider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="revslider/css/revslider-styles.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="revslider/rs-plugin/css/settings.css" media="screen" />
+
+<!-- Angular CFG  -->
+<script src="js/app.js"></script>
+
+<!-- Angular  Controllers -->
+<script src="js/controllers/main.js"></script>
+<script src="js/controllers/login.js"></script>
+<script src="js/controllers/HomeController.js"></script>
+<script src="js/controllers/ProfileController.js"></script>
+<script src="js/controllers/ShippmentController.js"></script>
+
+<!-- Angular  Services -->
+<script src="js/services/userservice.js"></script>
+<script src="js/services/ShippmentService.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+	<div class="app angular-container" id="app" ui-view autoscroll="true"></div>
+	<!-- div ng-view autoscroll="true"></div --> 
+	<!-- jQuery -->
+<!--script src="js/jquery.js"></script-->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
+
+<!-- Custom Select box -->
+<script src="js/vendors/bootstrap/bootstrap-select.js"></script>
+
+<!-- Bxslider -->
+<script src="js/bx-slider/jquery.bxslider.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+    /*$('.carousel').carousel({ interval: 10000 /*changes the speed * / });*/
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#accordion').on('hidden.bs.collapse', function () {
+        });
+        
+        $('#accordion .accordion-toggle').click(function (e){
+            var chevState = $(e.target)
+                            .siblings("i.indicator")
+                            .toggleClass('glyphicon-triangle-bottom glyphicon-triangle-top');
+                            
+                            $("i.indicator")
+                            .not(chevState)
+                            .removeClass("glyphicon-triangle-bottom")
+                            .addClass("glyphicon-triangle-top");
+                                    
+                            $("#myselect option:selected").text();
+        });
+    });
+</script>
+	
+	
+	
+<!-- Responsive CSS -->
+<link href="css/responsive.css" rel="stylesheet">
+
+</body>
+</html>

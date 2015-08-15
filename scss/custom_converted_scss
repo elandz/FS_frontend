@@ -1,0 +1,1371 @@
+
+
+/* Link To convert
+   http://sebastianpontow.de/css2compass/
+*/
+
+
+
+//colors
+$black_50: rgba(0, 0, 0, 0.5);
+$color_robins_egg_blue_approx: #08c1cd;
+$white: #fff;
+$color_eastern_blue_approx: #259dab;
+$color_flamingo_approx: #f7522a;
+$black:  black;
+$color_shark_approx: #262626;
+$color_wild_sand_approx: #f5f5f5;
+$color_blue_lagoon_approx: #007987;
+$color_trinidad_approx: #e9350a;
+$color_java_approx: #1cbfd2;
+$color_cararra_approx: #ebebeb;
+$black_75: rgba(0, 0, 0, 0.075);
+$color_fuscous_gray_approx: #555;
+$color_chicago_approx: #565656;
+$red: red;
+$color_concrete_approx: #f3f3f3;
+$color_pot_pourri_approx: #fce8e3;
+$color_vivid_tangerine_approx: #fc9d86;
+$color_gallery_approx: #eee;
+$color_tapa_approx: #747474;
+$color_grenadier_approx: #d63109;
+$color_blumine_approx: #23527c;
+$color_nobel_approx: #b5b5b5;
+$color_aztec_approx: #161919;
+$color_tuatara_approx: #373b3b;
+$gray: gray;
+$color_delta_approx: #a4a4a4;
+$color_mercury_approx: #e6e6e6;
+$color_pumice_approx: #cacaca;
+$white_50: rgba(255, 255, 255, 0.5);
+$white_10: rgba(255, 255, 255, 0.1);
+$color_java_30_approx: rgba(28, 191, 210, 0.3);
+$color_black_haze_approx: #f6f6f6;
+$color_scarpa_flow_approx: #58585d;
+$gold: gold;
+$color_tiber_approx: #003339;
+$color_viking_approx: #58d1df;
+$color_tiara_approx: #cad0d1;
+$color_star_dust_approx: #9d9d9d;
+$color_celeste_approx: #cfcfcf;
+$black_40: rgba(0, 0, 0, 0.4);
+
+//fonts
+$font_0: Raleway;
+$font_1: sans-serif;
+
+//urls
+$url_0: url(../images/usa-flag.jpg);
+$url_1: url(../images/spanish.jpg);
+$url_2: url(../images/spritebox-sprite.png);
+$url_3: url(../images/left-arrow.png);
+$url_4: url(../images/right-arrow.png);
+$url_5: url(../images/spritebox-sprite2.png);
+$url_6: url(../images/price-bg.png);
+$url_7: url(../images/sending-banner.jpg);
+$url_8: url(../images/countdown-bg.jpg);
+$url_9: url(../images/Thank-you_bg.jpg);
+$url_10: url(../images/shipment-sprite.png);
+$url_11: url(../images/contact-us-top-bg.png);
+$url_12: url(../images/contact-us-bottom-map.png);
+$url_13: url(../images/media-top-bg.png);
+$url_14: url(../images/faq-top-bg.png);
+
+//@extend-elements
+//original selectors
+//.btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover
+%extend_1 {
+	background-color: $color_blue_lagoon_approx;
+	border-color: $color_blue_lagoon_approx;
+	color: $white;
+}
+
+//original selectors
+//.location, .box, .calender, .price
+%extend_2 {
+	display: inline-block;
+	background-image: $url_2;
+	background-repeat: no-repeat;
+}
+
+//original selectors
+//.location2, .calender2
+%extend_3 {
+	display: inline-block;
+	background-image: $url_5;
+	background-repeat: no-repeat;
+}
+
+//original selectors
+//.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover
+%extend_4 {
+	background-color: $color_mercury_approx;
+	border-color: $color_pumice_approx;
+	color: $color_blue_lagoon_approx;
+}
+
+
+html {
+	height: 100%;
+	font-family: $font_0, $font_1;
+}
+body {
+	height: 100%;
+	font-family: $font_0, $font_1;
+	padding-top: 0;
+	margin-top: 77px;
+}
+.img-portfolio {
+	margin-bottom: 30px;
+}
+header {
+	.carousel {
+		height: 100%;
+	}
+	&.carousel {
+		height: 100%;
+		.item {
+			height: 100%;
+		}
+		.carousel-inner {
+			height: 100%;
+		}
+		.fill {
+			width: 100%;
+			height: 100%;
+			background-position: left center;
+			background-size: cover;
+		}
+		item.active {
+			height: 100%;
+		}
+	}
+}
+.carousel-indicators {
+	bottom: 120px;
+	.active {
+		background-color: $color_robins_egg_blue_approx;
+		width: 14px;
+		height: 14px;
+		margin: 0 5px;
+	}
+	li {
+		border: 0 solid $white;
+		background-color: $white;
+		width: 14px;
+		height: 14px;
+		margin: 0 5px;
+	}
+}
+.navbar-brand {
+	float: left;
+	margin: 24px 0;
+	padding: 0;
+	height: auto;
+}
+.btn-default {
+	background-color: $color_java_approx;
+	border-color: $color_java_approx;
+	color: $white;
+	&.focus {
+		@extend %extend_1;
+	}
+	&:active {
+		@extend %extend_1;
+	}
+	&:focus {
+		@extend %extend_1;
+	}
+	&:hover {
+		@extend %extend_1;
+	}
+}
+.navbar-inverse {
+	background-color: $black;
+	&.navbar-nav > li > a {
+		color: $white;
+		font-size: 15px;
+	}
+	.navbar-nav > li > a {
+		color: $white;
+		font-size: 15px;
+		&:focus {
+			color: $color_java_approx;
+		}
+		&:hover {
+			color: $color_java_approx;
+		}
+	}
+}
+.signin {
+	width: 250px;
+	padding: 15px;
+}
+.login-popup {
+	border-top: 5px solid $color_java_approx;
+}
+.width-adj {
+	width: 220px;
+}
+.form-control {
+	border: 1px solid $color_cararra_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 0 $black_75 inset;
+	color: $color_fuscous_gray_approx;
+	margin-bottom: 10px;
+	height: 41px;
+}
+.form-control::-moz-placeholder {
+	color: $color_chicago_approx;
+}
+.c-adj1 {
+	width: 100%;
+	font-weight: 700;
+}
+.btn {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	padding: 9px 12px;
+}
+.c-adj2 {
+	font-size: 12px;
+	right: -2px;
+}
+.carousel-caption {
+	top: 17%;
+}
+.c-adj05 {
+	background-color: $color_concrete_approx;
+	color: $color_chicago_approx !important;
+	height: 50px !important;
+	padding: 0 0 0 38px;
+	padding: 0 0 0 35px;
+	width: 100% !important;
+	.btn-default {
+		background-color: transparent;
+		border-color: transparent;
+		color: $color_chicago_approx;
+		padding: 13px 0 18px 36px;
+	}
+	button::after {
+		background-image: $url_2;
+		background-position: 5px -86px;
+		background-repeat: no-repeat;
+		background-size: 130px auto;
+		content: "";
+		height: 43px;
+		left: 0;
+		position: absolute;
+		top: 8px;
+		width: 60px;
+	}
+	.caret {
+		color: $color_robins_egg_blue_approx;
+	}
+}
+.c-adj06 {
+	background-color: $color_concrete_approx;
+	color: $color_chicago_approx !important;
+	height: 50px !important;
+	font-size: 13.5px;
+	padding: 0 0 0 31px;
+	width: 100% !important;
+	.btn-default {
+		background-color: transparent;
+		border-color: transparent;
+		color: $color_chicago_approx;
+		padding: 15px 0 18px 46px !important;
+	}
+	button::after {
+		background-image: $url_5;
+		background-position: -7px -84px;
+		background-repeat: no-repeat;
+		background-size: 130px auto;
+		content: "";
+		height: 52px;
+		position: absolute;
+		left: 10px;
+		width: 60px;
+	}
+	button .caret {
+		color: $red;
+	}
+}
+.c-adj3 {
+	h2 {
+		font-size: 50pt;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 30pt;
+	}
+}
+.c-adj4 {
+	background-color: $color_concrete_approx;
+	color: $color_chicago_approx !important;
+	height: 50px !important;
+	padding-left: 35px;
+	width: 100% !important;
+}
+.c-adj5 {
+	background-color: $color_concrete_approx;
+	color: $color_chicago_approx !important;
+	height: 50px !important;
+	padding-left: 38px;
+	width: 100% !important;
+}
+.form-control::-webkit-input-placeholder {
+	color: $color_chicago_approx;
+}
+.cd-adj2::-webkit-input-placeholder {
+	color: $white;
+}
+@media screen and(-webkit-min-device-pixel-ratio: 0) {
+	.c-adj06 {
+		font-size: 13px;
+	}
+}
+.c-adj6 {
+	background-color: $color_concrete_approx;
+	color: $color_chicago_approx !important;
+	height: 50px !important;
+	padding-left: 37px;
+	width: 100% !important;
+}
+.c-adj7 {
+	background-color: $color_robins_egg_blue_approx;
+	border-color: $color_blue_lagoon_approx;
+	font-size: 26px;
+	font-weight: 700;
+	height: 50px;
+	line-height: 5px;
+	width: 70%;
+}
+.location {
+	@extend %extend_2;
+	background-position: -0px -2px;
+	height: 52px;
+	width: 40px;
+}
+.box {
+	@extend %extend_2;
+	background-position: 5px -44px;
+	background-size: 139px auto;
+	height: 52px;
+	width: 40px;
+}
+.calender {
+	@extend %extend_2;
+	background-position: 5px -86px;
+	height: 52px;
+	width: 40px;
+	background-size: 139px auto;
+}
+.price {
+	@extend %extend_2;
+	background-position: 4px -129px;
+	background-size: 139px auto;
+	height: 52px;
+	width: 40px;
+}
+.red-outline-btn {
+	background-color: $white;
+	border: 1px solid $color_blue_lagoon_approx;
+	color: $color_blue_lagoon_approx;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 70px;
+	width: 200px;
+	&:hover {
+		background-color: $color_pot_pourri_approx;
+		color: $color_trinidad_approx;
+		border: 1px solid $color_vivid_tangerine_approx;
+	}
+}
+.search {
+	background-color: $black_50;
+	margin-top: -102px;
+	padding: 26px 0 16px;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+.page-header {
+	border-bottom: 0 solid $color_gallery_approx;
+	color: $color_blue_lagoon_approx;
+	font-size: 33pt;
+	font-weight: 400;
+	margin: 40px 0 50px;
+	text-align: center;
+}
+.page-content {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.period {
+	display: block;
+	font-style: italic;
+}
+.img-adj {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+}
+.hiw {
+	h3 {
+		color: $color_blue_lagoon_approx;
+		font-size: 35px;
+		font-weight: 800;
+		margin-top: 30px;
+	}
+	h4 {
+		color: $color_blue_lagoon_approx;
+		font-size: 20px;
+		font-weight: 600;
+		margin: 18px 0;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+.movement {
+	background-color: $color_blue_lagoon_approx;
+	margin-top: 50px;
+	padding: 26px 0 16px;
+	width: 100%;
+	z-index: 100;
+}
+.page-header2 {
+	border-bottom: 0 solid $color_gallery_approx;
+	color: $white;
+	font-size: 34pt;
+	font-weight: 400;
+	margin: 10px 0 50px;
+	text-align: center;
+}
+.bx-prev::before {
+	background: $url_3 no-repeat scroll 0 0 transparent;
+	content: "";
+	display: block;
+	height: 70px;
+	left: -66px;
+	position: absolute;
+	top: 72px;
+	width: 37px;
+}
+.bx-next::before {
+	background: $url_4 no-repeat scroll 0 0 transparent;
+	content: "";
+	display: block;
+	height: 70px;
+	right: -66px;
+	position: absolute;
+	top: 72px;
+	width: 37px;
+}
+.bx-wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+.bx-viewport {
+	height: auto !important;
+	margin-bottom: 40px;
+}
+.text-adj {
+	color: $white;
+	font-size: 17px;
+	margin-top: 26px;
+	text-align: center;
+	text-transform: none !important;
+}
+.text-adj2 {
+	color: $white;
+	font-size: 12px;
+}
+#carousel {
+	margin-top: 20px;
+}
+.item {
+	.thumb {
+		width: 25%;
+		cursor: pointer;
+		float: left;
+		img {
+			width: 100%;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+.text-adj3 {
+	color: $color_trinidad_approx;
+	margin: 50px 0 60px;
+}
+.text-adj4 {
+	color: $color_tapa_approx;
+	margin: 50px 0 60px;
+}
+.orange-text {
+	color: $color_trinidad_approx !important;
+}
+.c-adj8 {
+	left: 21%;
+	top: 6% !important;
+	h2 {
+		font-size: 50pt;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 30pt;
+	}
+}
+.c-adj9 {
+	background-color: $color_trinidad_approx;
+	border-color: $color_trinidad_approx;
+	font-size: 26px;
+	font-weight: 700;
+	height: 50px;
+	line-height: 5px;
+	width: 70%;
+}
+.location2 {
+	@extend %extend_3;
+	background-position: -0px 11px;
+	height: 52px;
+	width: 40px;
+}
+.calender2 {
+	@extend %extend_3;
+	background-position: 2px -65px;
+	background-size: 130px auto;
+	height: 52px;
+	width: 40px;
+}
+.price-tag {
+	background: $url_6 no-repeat scroll 0 0/100% auto transparent;
+	color: $white;
+	font-size: 21px;
+	font-weight: bold;
+	height: 29px;
+	line-height: 28px;
+	margin-top: -12%;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.icon-adj {
+	background-color: $gray;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	color: $white;
+	font-size: 13pt !important;
+	height: 30px;
+	line-height: 31px !important;
+	margin: 15px 5px 0;
+	width: 30px !important;
+	&:hover {
+		background-color: $color_blumine_approx;
+		color: $white;
+		text-decoration: none;
+	}
+}
+.uterm {
+	color: $color_nobel_approx;
+	font-size: 11px;
+	margin-top: 13px;
+}
+.margin-adj {
+	margin-top: 20px;
+}
+.pos-rel {
+	position: relative;
+}
+.pos-1 {
+	color: $white;
+	font-size: 13px;
+	left: 16px;
+	position: absolute;
+	top: 52px;
+	&:hover {
+		color: $color_robins_egg_blue_approx;
+	}
+}
+.pos-2 {
+	color: $white;
+	font-size: 14px;
+	left: 16px;
+	position: absolute;
+	top: -22px;
+}
+.login-popup2 {
+	background-color: $white;
+	left: 35%;
+	padding: 30px 20px;
+	position: fixed;
+	top: 14%;
+	z-index: 200;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 2px 2px 0 $black_50;
+	h4 {
+		color: $red;
+		font-size: 14pt;
+		font-weight: bold;
+		margin: 0 0 30px;
+		text-align: center;
+	}
+	label {
+		color: $color_java_approx;
+		font-size: 16px;
+		font-weight: normal;
+	}
+}
+.bx-pager-item {
+	display: none;
+}
+footer {
+	background-color: $color_aztec_approx;
+	margin: 50px 0 0;
+}
+.c-adj10 {
+	text-align: center;
+	padding: 30px 0;
+	border-bottom: 1px solid $color_tuatara_approx;
+}
+.c-adj11 {
+	border-top: 1px solid $black;
+	border-bottom: 1px solid $color_tuatara_approx;
+	overflow: hidden;
+}
+*::after {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+*::before {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+.c-adj12 {
+	border-bottom: 1px solid $color_tuatara_approx;
+	border-top: 1px solid $black;
+	color: $color_delta_approx;
+	font-size: 9pt;
+	line-height: 55px;
+	text-align: center;
+}
+.inerpage-bg {
+	background: $url_7 no-repeat center $color_blue_lagoon_approx;
+	height: 529px;
+}
+.sending-adj3 {
+	top: 40% !important;
+	left: 0 !important;
+	h2 {
+		font-size: 50pt;
+		font-weight: 800;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 30pt;
+		text-align: left;
+	}
+}
+.sending-adj1 {
+	p {
+		font-size: 18px;
+	}
+	h5 {
+		font-size: 17pt;
+		font-weight: 600;
+		margin: 40px 0 50px;
+	}
+}
+.f-height {
+	height: 100%;
+}
+.navbar-toggle {
+	margin-top: 22px;
+}
+.btn-primary {
+	&.active {
+		@extend %extend_4;
+	}
+	&.focus {
+		@extend %extend_4;
+	}
+	&:active {
+		@extend %extend_4;
+	}
+	&:focus {
+		@extend %extend_4;
+	}
+	&:hover {
+		@extend %extend_4;
+	}
+}
+.ss {
+	padding: 10px 10px 25px 10px;
+}
+.cd-bg {
+	background: $url_8 no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	padding-top: -50px;
+}
+.cd-logo {
+	margin-top: 80px;
+}
+.cd-hd {
+	color: $white;
+	font-size: 40pt;
+	font-weight: 300;
+	margin-top: 6%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.counter {
+	height: 110px;
+	margin: 2% 0;
+}
+.join {
+	color: $white;
+	margin-top: -46px;
+	p {
+		color: $white;
+		font-size: 14pt;
+	}
+	.form-control::-moz-placeholder {
+		color: $white;
+	}
+}
+.cd-adj1 {
+	border: 1px solid $white_50;
+	float: left;
+	font-size: 14pt;
+	font-weight: bold;
+	width: 20%;
+	//Instead of the line below you could use @include border-top-left-radius($radius)
+	border-top-left-radius: 0;
+	//Instead of the line below you could use @include border-bottom-left-radius($radius)
+	border-bottom-left-radius: 0;
+	border-left: 0;
+}
+.cd-adj2 {
+	background-color: $white_10;
+	border: 1px solid $white_50;
+	float: left;
+	height: 47px;
+	//Instead of the line below you could use @include border-top-right-radius($radius)
+	border-top-right-radius: 0;
+	//Instead of the line below you could use @include border-bottom-right-radius($radius)
+	border-bottom-right-radius: 0;
+	width: 80%;
+	color: $white;
+	border-right: 0;
+}
+.cd-adj3 {
+	overflow: hidden;
+}
+.cd-adj12 {
+	bottom: 16px;
+	color: $white;
+	font-size: 9pt;
+	line-height: 55px;
+	position: absolute;
+	text-align: center;
+	width: inherit;
+}
+.cd-icon-adj {
+	background-color: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	color: $black_50;
+	font-size: 14pt !important;
+	height: 30px;
+	line-height: 31px !important;
+	margin: 15px 5px 0;
+	width: 30px !important;
+	text-indent: 6px;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.t-bg {
+	background: $url_9 no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	padding-top: -50px;
+}
+.round-circ {
+	background-color: $color_java_30_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	height: 660px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 660px;
+}
+.thank-text {
+	margin: 0 auto;
+}
+.logo-pos {
+	display: block;
+	margin: 0 auto;
+	width: 380px;
+}
+.faq-adj1 {
+	border: medium none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 !important;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	margin-bottom: 30px !important;
+}
+.faq-adj2 {
+	background-color: $color_black_haze_approx !important;
+	border-left: 6px solid $color_blue_lagoon_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 0 $black;
+	padding: 17px 10px;
+	position: relative;
+}
+.faq-adj3 {
+	color: $black;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+.faq-adj4 {
+	color: $color_blue_lagoon_approx;
+	position: absolute;
+	right: 24px;
+	top: 19px;
+	z-index: 1;
+}
+.faq-adj5 {
+	font-size: 16px;
+	padding: 15px 30px 0;
+}
+.notify {
+	background-color: $color_eastern_blue_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	color: $white;
+	font-weight: bold;
+	height: 20px;
+	line-height: 16px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 13px;
+	width: 20px;
+}
+.notify2 {
+	background-color: $color_flamingo_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	color: $white;
+	font-weight: bold;
+	height: 20px;
+	line-height: 16px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 13px;
+	width: 20px;
+}
+.faq-adj7 {
+	background-color: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	color: $gray;
+	height: 30px;
+	line-height: 26px;
+	margin-right: 10px;
+	position: absolute;
+	text-align: center;
+	top: 24px;
+	width: 30px;
+}
+.faq-adj8 {
+	float: left;
+	height: 10px;
+	width: 37px;
+}
+.lang-popup {
+	border-top: 5px solid $color_scarpa_flow_approx;
+	padding: 0 10px;
+	li {
+		border-bottom: 1px dotted $black;
+		padding: 10px 0;
+		&:last-child {
+			border-bottom: none;
+		}
+		a {
+			font-size: 13px;
+			line-height: 20px;
+			padding: 0;
+			img {
+				padding-right: 10px;
+			}
+		}
+	}
+}
+.second-nav {
+	background-color: $gold;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	margin-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	margin-top: 27px;
+	height: 120px;
+	padding-top: 34px;
+	border-bottom: 1px solid $color_tiber_approx;
+	background: $color_blue_lagoon_approx;
+	background: linear-gradient(to bottom, $color_blue_lagoon_approx 0, $color_viking_approx 100%);
+}
+.shipment-icon {
+	background: $url_10 no-repeat scroll 0 -8px transparent;
+	display: block;
+	float: left;
+	height: 40px;
+	margin-top: -8px;
+	width: 40px;
+}
+.nshipment-icon {
+	background: $url_10 no-repeat scroll 0 -63px transparent;
+	display: block;
+	float: left;
+	height: 40px;
+	margin-top: -8px;
+	width: 40px;
+}
+.sn {
+	.selected {
+		border: 1px solid $white;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+	}
+	> li > a {
+		font-size: 18px !important;
+		padding: 15px 30px;
+	}
+	a:hover {
+		color: $white !important;
+		opacity: .7;
+	}
+}
+.up-btn {
+	background-color: $color_tiara_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	clear: both;
+	color: $white;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 30px auto;
+	padding: 15px 0;
+	text-align: center;
+	width: 89%;
+	&:hover {
+		color: $color_chicago_approx;
+		text-decoration: none;
+		opacity: .8;
+	}
+}
+.shipment-cotent {
+	h1 {
+		color: $color_blue_lagoon_approx;
+		font-size: 33px;
+	}
+	p {
+		color: $color_star_dust_approx;
+	}
+	textarea {
+		border-color: $color_celeste_approx;
+	}
+}
+.sub-btn {
+	background-color: $color_blue_lagoon_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	color: $white;
+	float: right;
+	font-weight: 600;
+	padding: 9px 0;
+	text-align: center;
+	width: 150px;
+	&:hover {
+		color: $color_wild_sand_approx;
+		text-decoration: none;
+		opacity: .8;
+	}
+}
+.shipment {
+	margin: 80px 0;
+}
+.adj-16 {
+	width: 300px;
+}
+.adj-17 {
+	border-left: 0 none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	border-right: 0 none;
+	border-top: 5px solid $color_java_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 2px 3px $black_40;
+	h4 {
+		font-weight: bold;
+		margin: 10px 0;
+		text-align: center;
+	}
+	.modal-header {
+		border-bottom: 0 solid $red;
+		.close {
+			margin-top: 9px;
+		}
+	}
+	.modal-footer {
+		border-top: 0 solid $red;
+	}
+	.modal-body {
+		overflow: hidden;
+		padding: 0 30px 30px;
+	}
+	.sub-btn {
+		width: 100%;
+	}
+}
+.marbot-twenty {
+	margin-bottom: 20px;
+}
+.submit-btn3 {
+	float: left;
+	font-size: 12pt;
+	text-transform: uppercase;
+	width: 200px;
+}
+.s-adj {
+	color: $color_blue_lagoon_approx;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 60px;
+}
+.contact-us {
+	width: 100%;
+	.top-bg {
+		height: 336px;
+		background: $url_11 no-repeat top center;
+		background-size: cover;
+	}
+	.bottom-map {
+		height: 548px;
+		background: $url_12 no-repeat top center;
+		background-size: cover;
+		display: inline-block;
+		width: 100%;
+		.page-content {
+			h1.page-heading {
+				color: $color_blumine_approx;
+				margin: 50px 0 40px;
+			}
+			p.visit-us {
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 14px;
+				margin-bottom: 30px;
+			}
+			ul li {
+				list-style-type: none;
+				line-height: 25px;
+			}
+		}
+	}
+}
+.media-page {
+	width: 100%;
+	.top-bg {
+		height: 336px;
+		background: $url_13 no-repeat top center;
+		background-size: cover;
+	}
+	.page-content {
+		display: inline-block;
+		width: 100%;
+		h1.page-heading {
+			color: $color_blumine_approx;
+			margin: 50px 0 40px;
+		}
+		p.visit-us {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 14px;
+			margin-bottom: -2px;
+		}
+		ul li {
+			list-style-type: none;
+			line-height: 25px;
+			&.logo-text {
+				font-size: 20px;
+				margin-top: 25px;
+			}
+		}
+	}
+}
+.faq-page {
+	width: 100%;
+	.top-bg {
+		height: 336px;
+		background: $url_14 no-repeat top center;
+		background-size: cover;
+	}
+}
+@media(max-width: 991px) {
+	.customer-img {
+		margin-bottom: 30px;
+	}
+	.img-related {
+		margin-bottom: 30px;
+	}
+	.carousel-caption {
+		top: 11%;
+	}
+	.price-tag {
+		line-height: 22px;
+	}
+	.round-circ {
+		height: 550px;
+		width: 550px;
+	}
+	.footer-links a {
+		padding: 0 3%;
+	}
+}
+@media(max-width: 767px) {
+	.img-portfolio {
+		margin-bottom: 15px;
+	}
+	.round-circ {
+		height: 500px;
+		width: 500px;
+		margin-top: 30px;
+	}
+	.logo-pos {
+		width: 70%;
+	}
+	.join {
+		margin: -69px auto;
+		width: 80%;
+	}
+	.search {
+		background-color: $black_50;
+		margin-top: 0;
+		padding: 26px 0 16px;
+		position: relative;
+		width: 100%;
+		z-index: 100;
+	}
+	.carousel-indicators {
+		bottom: 10px;
+	}
+	.c-adj7 {
+		width: 100%;
+	}
+	.bx-next::before {
+		right: 1px;
+	}
+	.bx-prev::before {
+		left: 1px;
+	}
+	.c-adj9 {
+		width: 100%;
+	}
+	.carousel-caption {
+		top: 18%;
+	}
+	.price-tag {
+		line-height: 15px;
+		font-size: 13px;
+	}
+	header.carousel .carousel {
+		height: 70%;
+	}
+	.bxslider li {
+		width: 107px !important;
+	}
+	.footer-links a {
+		float: left;
+		padding: 0 1%;
+		width: 20%;
+	}
+}
+@media(max-width: 480px) {
+	.round-circ {
+		height: 400px;
+		width: 400px;
+		margin-top: 50px;
+	}
+}
+@media(max-width: 400px) {
+	.round-circ {
+		height: 320px;
+		width: 320px;
+		margin-top: 80px;
+	}
+	.cd-logo {
+		margin-top: 50px;
+	}
+	.cd-adj12 {
+		bottom: 12px;
+		line-height: 21px;
+		padding: 0 22%;
+		width: inherit;
+	}
+}
+.img-hover:hover {
+	opacity: 0.8;
+}
+.navbar ul li {
+	position: relative;
+	span {
+		&.notify {
+			background-color: $color_eastern_blue_approx;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			color: $white;
+			font-weight: bold;
+			height: 20px;
+			line-height: 16px;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 13px;
+			width: 20px;
+		}
+		span.notify2 {
+			background-color: $color_flamingo_approx;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			color: $white;
+			font-weight: bold;
+			height: 20px;
+			line-height: 16px;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 13px;
+			width: 20px;
+		}
+	}
+	ul.lang-popup li {
+		border-bottom: 1px dotted $black;
+		padding: 10px 0;
+		&:last-child {
+			border-bottom: none;
+		}
+		a {
+			font-size: 13px;
+			line-height: 20px;
+			padding: 0;
+			img {
+				padding-right: 10px;
+			}
+		}
+		span {
+			font-size: 13px;
+			line-height: 20px;
+			padding: 0;
+			cursor: pointer;
+			width: 100%;
+			display: inline-block;
+			padding-left: 32px;
+			&:hover {
+				color: $color_shark_approx;
+				text-decoration: none;
+				background-color: $color_wild_sand_approx !important;
+			}
+			&.eng {
+				background: $url_0 no-repeat left center;
+				background-size: 22px 12px;
+			}
+			&.spn {
+				background: $url_1 no-repeat left center;
+				background-size: 22px 15px;
+			}
+		}
+	}
+}
+.hover-adj2 .btn-default {
+	&.active {
+		background-color: $color_blue_lagoon_approx;
+		border-color: $color_blue_lagoon_approx;
+		color: $white;
+	}
+	&:hover {
+		background-color: $color_blue_lagoon_approx;
+		border-color: $color_blue_lagoon_approx;
+		color: $white;
+	}
+}
+.open > .dropdown-toggle {
+	&.btn-default {
+		background-color: $color_blue_lagoon_approx;
+		border-color: $color_blue_lagoon_approx;
+		color: $white;
+	}
+	&.btn-primary {
+		background-color: $color_mercury_approx;
+		border-color: $color_pumice_approx;
+		color: $color_blue_lagoon_approx;
+	}
+}
+#abc.open > .dropdown-toggle.btn-default {
+	background-color: $color_trinidad_approx;
+	border-color: $color_blue_lagoon_approx;
+	color: $white;
+	&.caret {
+		color: $white;
+	}
+}
+.navbar-nav > li > a {
+	padding-bottom: 27px;
+	padding-top: 29px;
+}
+#myCarousel2 .carousel-indicators .active {
+	background-color: $color_trinidad_approx;
+}
+.hover-adj .btn-default:hover {
+	background-color: $color_grenadier_approx;
+	border-color: $color_trinidad_approx;
+	color: $white;
+}
+.footer-links a {
+	color: $white;
+	line-height: 57px;
+	padding: 0 5%;
+}
+.faq-adj6 li {
+	position: relative;
+}
+.shipment-c label {
+	font-weight: normal;
+	padding-left: 78px;
+	padding-top: 14px;
+}

@@ -1,0 +1,97 @@
+'use strict';
+var mainScope="";
+/* Main Controllers */
+
+app.controller
+(
+    'AppCtrl',
+    [
+        '$scope',
+        '$state',
+        '$translate',
+        'UserService',
+        function($scope,$state,$translate,UserService)
+        {
+            mainScope = $scope;
+            
+            $scope.loggedInUser = "" ;
+            
+            $scope.app = { name : 'My Angular App', version : '1.0' };
+            
+            $scope.getLoggedInUser = function(){
+                $scope.loggedInUser =  sessionStorage.getItem("user");
+                
+                if( $scope.loggedInUser != null &&
+                    $scope.loggedInUser != undefined &&
+                    $scope.loggedInUser  != ""
+                )
+                {
+                    $scope.loggedInUser = JSON.parse($scope.loggedInUser);
+                }
+                else
+                {
+                    $scope.loggedInUser = "" ;
+                }
+            };
+        
+            $scope.logout = function()
+            {
+                $scope.loggedInUser = "" ;
+                $scope.deleteCookie("token");
+                $state.go("app.home");
+            };
+            
+            $scope.login = function()
+            {
+                UserService.login($scope.user)
+                           .success
+                           (
+                               function(response)
+                               {
+                                   document.cookie = "token=" + response.user.token + "";
+                                   sessionStorage.setItem("user", JSON.stringify(response.user));
+                                   $scope.getLoggedInUser();
+                                   $state.go("app.dashboard");
+                               }
+                            )
+                            .error
+                            (
+                                function(error)
+                                {
+                                    // Handle Error Case here ...
+                                }
+                            );
+
+            };
+        
+            $scope.deleteCookie = function( name )
+            {
+                document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            };
+        
+            $scope.selectLanguage = function(lang){
+                
+                $translate.use(lang);
+            };
+            
+            $scope.getLoggedInUser();
+            
+            $scope.loadIndex   = function() { $state.go("app.index"); };
+            $scope.loadMedia   = function() { $state.go("app.media"); };
+            $scope.loadContact = function() { $state.go("app.contact"); };
+            $scope.loadFaq     = function() { $state.go("app.faq"); };
+            
+        }
+    ]
+);
+
+
+
+
+
+
+
+
+
+
+

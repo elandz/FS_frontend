@@ -1,0 +1,19 @@
+
+    {
+        "firstName": "Bob",
+        "uri": "24e71c81-cafe-4fe9-8a32-27abe7b68631",
+        "picUrl": "http://profile.ak.fbcdn.net/hprofile-ak-snc4/49230_1062536992_7648_q.jpg",
+        "photo":
+        {
+            "UUID": "null",
+            "type": "null"
+        },
+        "emailNotification": false,
+        "connectedFacebook": false,
+        "connectedTwitter": false,
+        "connectedLinkedIn": false,
+        "networkFacebook": 0,
+        "networkTwitter": 0,
+        "networkLinkedIn": 0
+    }
+

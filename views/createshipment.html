@@ -1,0 +1,78 @@
+<div class="create-shipment" ng-controller="ShippmentController" ng-init="init()">
+    <nav class="navbar navbar-inverse second-nav" role="navigation">
+        <div class="button-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-4">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="buttonbar collapse navbar-collapse faq-adj6" id="bs-example-navbar-collapse-4">
+                <ul class="nav navbar-nav navbar-left sn">
+                    <li class="pos-rel">
+                        <a href="#" class="shipment-icon" translate="shipment.btn_myshipments">My Shipments</a>
+                    </li>
+                    <li class="selected">
+                        <a href="#" class="nshipment-icon" translate="shipment.btn_newshipments">New Shipment</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        
+        <!-- how it works -->
+        <div class="row shipment">
+            
+            <div class="col-lg-4 col-md-5 col-sm-5 shipment-cotent-left">
+                <div class="col-lg-12" style="padding-left: 0px;">
+                    <img class="col-lg-12 col-md-12 col-sm-12" src="images/ship-p.jpg">
+                    <a href="#" class="col-lg-12 col-md-12 col-sm-12 up-btn" data-toggle="modal" data-target="#myModal"  translate="shipment.btn_upload_photo">Upload Photo</a>
+                </div>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog adj-16">
+
+                    <!-- Modal content-->
+                    <div class="modal-content adj-17">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" translate="shipment.btn_upload_photo_name">Please enter your name</h4>
+                      </div>
+                      <div class="modal-body">
+                        <input type="text" class="form-control" id="usr" placeholder="Full Name">
+                        <a href="#" class="sub-btn" translate="shipment.btn_upload_photo_save">Save</a>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-8 col-md-7 col-sm-7 shipment-cotent-right">
+
+              <h1 class="" >{{shippment.item}}, from {{shippment.fromLocation}} to {{shippment.toLocation}}, {{shippment.dateStr}}, ${{shippment.compensation}}</h1>
+
+              <p translate="shipment.message_note">Use this text or wirte your own personal message (type over).</p>
+
+               <textarea class="form-control" rows="5" id="comment"></textarea>
+
+               <a href="javascript:void(0)" ng-click="saveShippment()" class="sub-btn" translate="shipment.submit_btn">Submit</a>
+              
+            </div>
+
+        </div>
+    </div>
+</div>

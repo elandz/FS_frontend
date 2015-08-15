@@ -1,0 +1,95 @@
+'use strict';
+
+var app = angular.module(
+		      'app',
+		      [
+		           'ngResource',
+		           'ui.router',
+		           'ui.bootstrap',
+		           'pascalprecht.translate',
+		           'ngCookies'
+		       ]
+		  )
+		  .config(function($stateProvider, $urlRouterProvider)
+		  {
+			  
+			  // Angular.JS ROUTES ///
+	
+			  $stateProvider
+			  .state('access', {
+				  url : '/access',
+				  template: '<div ui-view class="fade-in-right-big smooth"></div>',
+			  })
+			  .state('access.login', {
+                  url: '/login',
+                  templateUrl: 'views/login.html',
+                  controller : 'LoginController'
+           
+              })
+              .state('app', {
+                  abstract: true,
+                  url: '/app',
+                  templateUrl: 'views/template.html'
+                	
+              })
+              .state('app.home', {
+                  url: '/home',
+                  templateUrl: 'views/home.html',
+                  controller : 'HomeController'
+               
+              })
+              .state('app.dashboard', {
+                  url: '/dashboard',
+                  templateUrl: 'views/dashboard.html',
+                  controller : 'HomeController'
+               
+              })
+              .state('app.index', {
+                  url: '/index',
+                  templateUrl: 'views/home.html',
+                  controller : 'footerMenu'
+               
+              })
+              .state('app.media', {
+                  url: '/media',
+                  templateUrl: 'views/media.html',
+                  controller : 'footerMenu'
+               
+              })
+              .state('app.contact', {
+                  url: '/contact',
+                  templateUrl: 'views/contact-us.html',
+                  controller : 'footerMenu'
+               
+              })
+              .state('app.faq', {
+                  url: '/faq',
+                  templateUrl: 'views/faq.html',
+                  controller : 'footerMenu'
+               
+              });
+			  
+			  $urlRouterProvider.otherwise('/app/home');
+		});
+
+
+angular.module('app')
+       .config
+       (
+    	   [
+    	        '$translateProvider',
+    	        function($translateProvider)
+    	        {
+    	        	$translateProvider.useStaticFilesLoader({
+    	        		prefix: 'locale/',
+    	        		suffix: '.js'
+    	        	});
+    	        	
+    	        	$translateProvider.preferredLanguage('it_IT');
+    	        	$translateProvider.useLocalStorage();
+    	        }
+    	    ]
+       );
+
+
+

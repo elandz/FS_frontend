@@ -1,0 +1,139 @@
+<div class="navres container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand frndsnd-logo" ng-click="loadNewShipment();" href="javascript:;">
+            <img src="images/friend-send-logo.jpg" alt="Friend Send Logo">
+        </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse faq-adj6"
+         id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="pos-rel" class="how-works_">
+                <a href="javascript:void(0)" translate="nav.how_works">How It Works</a>
+                <!--span class="notify">5</span-->
+            </li>
+            <li ng-show="false" class="deliver-something_">
+                <a href="javascript:void(0)" translate="nav.deliver">Deliver Something</a>
+                <span class="notify2">5</span>
+            </li>
+            <!-- li class="dropdown" style="display:none;">
+                <a href="javascript:void(0)" class="choose-language dropdown-toggle" data-toggle="dropdown" aria-expanded="false" translate="nav.language">
+                    Language 
+                    < ! - - b class="glyphicon glyphicon-menu-down c-adj2"></b - - >
+                </a>
+                <ul class="dropdown-menu lang-popup">  
+                     <li>    
+                         <span class="eng" translate="nav.english" ng-click="selectLanguage('en')">English</span>
+                     </li>
+                     <li>
+                         <span class="spn" translate="nav.spanish" ng-click="selectLanguage('sp')">Spanish</span>
+                    </li>
+                    < ! - - li>
+                        <a class="eng" href="javascript:void(0)"><img src="images/usa-flag.jpg" width="32">English</a>
+                    </li>
+                    <li>
+                        <a class="spn" href="javascript:void(0)"><img src="images/spanish.jpg" width="32">Spanish</a>
+                    </li - - >
+                </ul>
+            </li-->
+            <li class="dropdown register-menu" ng-if="loggedInUser == ''">
+                <a href="javascript:void(0)"
+                   class="dropdown-toggle" translate="nav.register_menu"
+                   data-toggle="dropdown" aria-expanded="false">Register <b class="glyphicon glyphicon-menu-down c-adj2"></b>
+                </a>
+                <ul class="dropdown-menu login-popup">
+                    <li>
+                        <form novalidate data-ng-submit="register()" class="signin" name="signinForm">
+                            <div class="field home-register-email">
+                                <input type="email" name="signinEmail" required placeholder="Your Email"  ng-model="register.email" class="form-control width-adj">
+                                <div class="nav-error" ng-show="signinForm.signinEmail.$dirty && signinForm.signinEmail.$invalid">
+                                    <small class="error" ng-show="signinForm.signinEmail.$error.required">Your email is required.</small>
+                                    <small class="error" ng-show="signinForm.signinEmail.$error.email">Your email is invalid.</small>
+                                </div>
+                            </div>
+                            <button class="btn btn-default c-adj1" type="submit">REGISTER</button>
+                            <p class="uterm">
+                                By registering I approve FriendSand&rsquo;s <a href="#">User Policy, Terms,</a> and <a href="#">Privacy Policy</a>
+                            </p>
+                            <div ng-if="registerSuccessMsg != ''">{{registerSuccessMsg}}</div>
+                            <div ng-if="registerErrMsg != ''">{{registerErrMsg}}</div>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown login-menu">
+                <a ng-if="loggedInUser == ''" href="javascript:void(0)" class="login dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <div class="faq-adj8">
+                        <span class="glyphicon glyphicon-user faq-adj7"></span>
+                    </div> Login <!-- b class="glyphicon glyphicon-menu-down c-adj2"></b-->
+                </a>
+                <a ng-if="loggedInUser != ''" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <div class="faq-adj8">
+                        <span class="glyphicon glyphicon-user faq-adj7"></span>
+                    </div> {{loggedInUser.firstName}} <b class="glyphicon glyphicon-menu-down c-adj2"></b>
+                </a>
+                <ul class="dropdown-menu login-popup">
+                    <li ng-if="loggedInUser != ''">
+                        <button class="btn btn-default c-adj1" ng-click="logout()">Log out</button>
+                    </li>
+                    <li ng-if="loggedInUser == ''">
+                        <form class="login"
+                              novalidate
+                              ng-submit="login()"
+                              name="loginForm">
+                            
+                            <div class="loginform-auth-error" ng-if="loginErrMessage != ''">{{loginErrMessage}}</div>
+                            
+                            <div class="field home-login-email">
+                                <input type="email"
+                                       name="loginEmail"
+                                       required
+                                       placeholder="Your Email"
+                                       id="youremail"
+                                       ng-model="user.email"
+                                       class="form-control width-adj">
+                                <div class="nav-error"
+                                     ng-show="loginForm.loginEmail.$dirty && loginForm.loginEmail.$invalid">
+                                    <small class="error" ng-show="loginForm.loginEmail.$error.required">Your email is required.</small>
+                                    <small class="error" ng-show="loginForm.loginEmail.$error.email">Your email is invalid.</small>
+                                </div>
+                            </div>
+                            <div class="field home-login-pass">
+                                <input type="password" placeholder="Password" id="password" required ng-model="user.password" class="form-control">
+                            </div>
+                            <button class="btn btn-default c-adj1" >LOGIN</button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+
+    <style>
+
+
+        form.signin { padding: 15px; }
+        form.signin .field {  }
+        form.signin .field input[type="email"] { margin-bottom: 0px; }
+        form.signin .field.home-register-email { margin-bottom: 10px; }
+        form.signin .field.home-register-email .login-email-mesage { font-size: 10px; color: red; font-weight: normal; }
+
+        form.login { padding: 15px; }
+        form.login .loginform-auth-error { color: red; font-weight: bold; margin-bottom: 10px; width: 100%; }
+        form.login .field {  }
+        form.login .field input[type="email"] { margin-bottom: 0px; }
+        form.login .field.home-login-email { margin-bottom: 10px; }
+        form.login .field.home-login-email .login-email-mesage { font-size: 10px; color: red; font-weight: normal; }
+
+    </style>
+
+
+
+</div>

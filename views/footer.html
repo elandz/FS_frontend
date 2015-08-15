@@ -1,0 +1,67 @@
+<div class="container footer-content" id="footer-content-bottom">
+    
+    <div class="col-lg-12 c-adj10">
+        <img src="images/footer-friendsend.jpg">
+    </div>
+    
+    <div class="col-lg-12 c-adj11 links-container">
+        
+        <div class="col-lg-4 col-md-4 col-sm-5 footer-lang">
+        <!--div class="col-lg-3 col-md-4 col-sm-5 footer-lang"-->
+            <span class="option eng" translate="nav.english" ng-click="selectLanguage('en')">English</span>
+            <span class="option spn" translate="nav.spanish" ng-click="selectLanguage('sp')">Spanish</span>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-6 footer-links">
+        <!--div class="col-lg-5 col-md-12 col-sm-12 footer-links"-->
+            <!-- a ng-click="loadIndex()" href="javascrip:void(0);">Home</a>
+            <a ng-click="loadMedia()" href="javascript:void(0);">Media</a>
+            <a ng-click="loadContact()" href="javascript:void(0);">Contact</a>
+            <a ng-click="loadFaq()" href="javascript:void(0);">Faq</a-->
+            
+            <span translate="footer.home" ng-click="loadIndex()">Home</span>
+            <span translate="footer.media" ng-click="loadMedia()">Media</span>
+            <span translate="footer.contact" ng-click="loadContact()">Contact</span>
+            <span translate="footer.faq" ng-click="loadFaq()">Faq</span>
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-sm-12 footer-social">
+        <!-- div class="col-lg-3 col-md-6 col-sm-5 footer-social"-->
+            <a href="#facebook" class="fa fa-fw fa-facebook icon-adj"></a>
+            <a href="#linkedin" class="fa fa-fw fa-linkedin icon-adj"></a>
+            <a href="#twitter" class="fa fa-fw fa-twitter icon-adj"></a>
+            <a href="#youtube" class="fa fa-fw fa-youtube icon-adj"></a>
+        </div>
+        
+        
+        
+    </div>
+    
+    <div translate="footer.copy_right" class="col-lg-12 c-adj12">&copy;2015 Friendsend, inc All Rights Reserved.</div>
+    
+<script type="text/javascript">
+    /*jQuery(document).ready(function($) {
+        
+        //$(window).load(function() {
+        $("footer" ).load(function() {
+            
+            var ftr_cntnt_elm = $('.footer-content');
+            
+            footer_content_bottom = document.getElementById('footer-content-bottom');
+            
+            footer_content_bottom_height = footer_content_bottom.offsetHeight;
+            
+            console.log('footer height is > ' + footer_content_bottom.offsetHeight);
+            
+            $('.footer-top-spacer').height(footer_content_bottom_height  + 20);
+            
+            if($(window).height() > 1000 )
+            {
+                //$('footer').addClass('stick-bottom');
+            }
+                
+        });
+    });*/
+</script>
+
+</div>

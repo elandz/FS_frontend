@@ -1,0 +1,667 @@
+
+<header id="revSlider" class="revslider">
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE 1 -->
+                <li data-transition="slideleft"
+                    data-slotamount="7"
+                    data-masterspeed="2000"
+                    data-thumb="revslider/images/slide1/thumb.jpg"
+                    data-delay="10000"
+                    data-saveperformance="on"
+                    data-title="Send Your Stuff Anywhere">
+                    <!-- MAIN IMAGE -->
+                    <img src="revslider/images/slide1/dummy.png"
+                        alt="background" data-lazyload="revslider/images/slide1/backscene.jpg"
+                        data-bgposition="right top"
+                        data-kenburns="on"
+                        data-duration="12000"
+                        data-ease="Power0.easeInOut"
+                        data-bgfit="115"
+                        data-bgfitend="100"
+                        data-bgpositionend="center bottom">
+                    
+                    <div class="tp-caption medium_bg_asbestos fade start send-stuff"
+                        data-x="0"
+                        data-y="55"
+                        data-speed="500"
+                        data-start="1300"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 6; transition: all 0s ease 0s; border-width: 0px; letter-spacing: 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);
+                        box-sizing: border-box; width: 100%; text-align: center; color: #fff; display: block; text-align: center; text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px;"
+                    >
+                    <span translate="home.send_stuff">SEND YOUR STUFF</span><br><span translate="home.anywhere">ANYWHERE</span>
+                    </div>
+
+                    <div translate="home.friendly_smile" class="tp-caption medium_bg_asbestos fade start friendly-smile"
+                        data-x="0"
+                        data-y="230"
+                        data-speed="500"
+                        data-start="1300"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 6; transition: all 0s ease 0s; border-width: 0px; letter-spacing: 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);
+                        box-sizing: border-box; width: 100%; text-align: center; color: #fff; display: block; text-align: center; text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px;"
+                    >
+                    Friendly deliveries with a smile
+                    </div>
+                            
+                    <div class="tp-caption medium_bg_darkblue sfr customout start move-down"
+                        data-x="0"
+                        data-y="320"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                        data-speed="500"
+                        data-start="1700"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="500"
+                        data-captionhidden="on"
+                        style="z-index: 2; transition: all 0s ease 0s; width: 100%; text-align: center; letter-spacing: 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                                
+                        <a translate="home.send" id="movedown-button" href="#movedown-button" class="send">Send</a>
+                        <a translate="home.deliver" id="movedown-button" href="#movedown-button" class="deliver">Deliver</a>
+                    </div>
+                            
+                </li>
+                        
+                <!-- SLIDE 2 -->
+                <li data-transition="slideleft" data-slotamount="7" data-masterspeed="2000" data-thumb="revslider/images/slide2/thumb.jpg" data-delay="10000"  data-saveperformance="on"  data-title="Door To Door Deliveries 24/7">
+                    <!-- MAIN IMAGE -->
+                    <img src="revslider/images/slide2/dummy.png"  alt="laptopmockup_sliderdy" data-lazyload="revslider/images/slide2/backscene.jpg" data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption customin fadeout rs-parallaxlevel-10"
+                        data-x="848"
+                        data-y="196" 
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                        data-speed="300"
+                        data-start="2700"
+                        data-easing="Power3.easeInOut"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        style="z-index: 2;"><img src="revslider/images/slide2/dummy.png" alt="" data-lazyload="revslider/images/slide2/redbg_big.png">
+                    </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div translate="home.deliver_24_7" class="tp-caption light_heavy_70 customin fadeout tp-resizeme rs-parallaxlevel-10"
+                        data-x="862"
+                        data-y="204" 
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                        data-speed="300"
+                        data-start="2850"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="none"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap; font-size: 27px; text-align: center; ">Deliveries 24/7
+                    </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div translate="home.door_to_door" class="tp-caption black_heavy_70 skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10"
+                        data-x="717"
+                        data-y="143" 
+                        data-speed="500"
+                        data-start="2400"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="chars"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap; margin-top: -15px; font-size: 60px; padding-bottom: 20px; ">Door To Door
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div translate="home.within_city" class="tp-caption black_bold_40 skewfromrightshort fadeout tp-resizeme rs-parallaxlevel-10"
+                        data-x="575"
+                        data-y="282" 
+                        data-speed="500"
+                        data-start="3200"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="chars"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        style="z-index: 5; max-width: auto; max-height: auto; ">Within your city, to the next,
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div translate="home.across_world" class="tp-caption black_bold_40 skewfromrightshort fadeout tp-resizeme rs-parallaxlevel-10"
+                        data-x="700"
+                        data-y="335" 
+                        data-speed="500"
+                        data-start="3200"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="chars"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        style="z-index: 5; max-width: auto; max-height: auto; ">or across the world.
+                    </div>
+
+                </li>
+                        
+            </ul>
+            <div class="tp-bannertimer"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.tp-banner').show().revolution({
+                dottedOverlay : "none",
+                delay : 16000,
+                startwidth : 1170,
+                startheight : 700,
+                hideThumbs : 200,
+                thumbWidth : 100,
+                thumbHeight : 50,
+                thumbAmount : 5,
+                navigationType : "bullet",
+                navigationArrows : "solo",
+                navigationStyle : "preview4",
+                touchenabled : "on",
+                onHoverStop : "on",
+                swipe_velocity : 0.7,
+                swipe_min_touches : 1,
+                swipe_max_touches : 1,
+                drag_block_vertical : false,
+                parallax : "mouse",
+                parallaxBgFreeze : "on",
+                parallaxLevels : [ 7, 4, 3, 2, 5, 4, 3, 2, 1, 0 ],
+                keyboardNavigation : "off",
+                navigationHAlign : "center",
+                navigationVAlign : "bottom",
+                navigationHOffset : 0,
+                navigationVOffset : 20,
+                soloArrowLeftHalign : "left",
+                soloArrowLeftValign : "center",
+                soloArrowLeftHOffset : 20,
+                soloArrowLeftVOffset : 0,
+                soloArrowRightHalign : "right",
+                soloArrowRightValign : "center",
+                soloArrowRightHOffset : 20,
+                soloArrowRightVOffset : 0,
+                shadow : 0,
+                fullWidth : "off",
+                fullScreen : "on",
+                spinner : "spinner4",
+                stopLoop : "off",
+                stopAfterLoops : -1,
+                stopAtSlide : -1,
+                shuffle : "off",
+                autoHeight : "off",
+                forceFullWidth : "off",
+                hideThumbsOnMobile : "off",
+                hideNavDelayOnMobile : 1500,
+                hideBulletsOnMobile : "off",
+                hideArrowsOnMobile : "off",
+                hideThumbsUnderResolution : 0,
+                hideSliderAtLimit : 0,
+                hideCaptionAtLimit : 0,
+                hideAllCaptionAtLilmit : 0,
+                startWithSlide : 0,
+                fullScreenOffsetContainer : ".header"
+            });
+            
+            $("#movedown-button.send").click(function() {
+                $('html, body').animate({
+                    scrollTop: ($("#text-fields-send").offset().top) - 100
+                }, 1000);
+            });
+            
+            $("#movedown-button.deliver").click(function() {
+                $('html, body').animate({
+                    scrollTop: ($("#text-fields-deliver").offset().top) - 98
+                }, 1000);
+            });
+        });
+    </script>
+</header>
+
+<!-- search -->
+<div class="search">
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <a id="text-fields-send"></a>
+            <div class="col-lg-2 col-md-2 col-sm-2 pos-rel">
+                <input type="text" placeholder="From What City?" id="youremail"
+                    class="form-control c-adj4 location">
+                    <a href="#" translate="home.search_top_send_city" class="pos-1">Send Within your City?</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 pos-rel">
+                <input type="text" placeholder="To What City?" id="youremail"
+                    class="form-control c-adj4 location">
+
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+
+                <input type="text" placeholder="What Item?" id="youremail"
+                    class="form-control c-adj5 box">
+            </div>
+
+
+            <div id="delivery-custom-style" class="col-lg-2 col-md-2 col-sm-2 pos-rel">
+                <!-- select class="form-control c-adj05 selectpicker show-tick" id="basic" -->
+                <select class="form-control c-adj05 show-tick" id="basic">
+                    <option value="" disabled selected translate="home.search_top_delivery_when">Delivery When?</option>
+                    <option translate="home.search_top_anytime">Anytime</option>
+                    <option translate="home.search_top_today">Today</option>
+                    <option translate="home.search_top_within_week">Within a week</option>
+                    <option translate="home.search_top_within_month">Within a month</option>
+                </select>
+            </div>
+            
+            <style>
+                #delivery-custom-style{ background: url(images/delivery-search-bg2.png) no-repeat 7px 13px transparent;
+                                        background-size: 150px auto; padding: 0px; margin: 0px 15px; width: 165px; background-color: rgb(243, 243, 243);
+                                        border-color: rgb(235, 235, 235); border: 1px solid #ebebeb; border-radius: 2px; box-shadow: 0 0 0 rgba(0, 0, 0, 0.075) inset;
+                                        overflow: hidden; height: 50px; position: relative; z-index: 500;
+                }
+                
+                #delivery-custom-style select.c-adj05 { float: left; width: 180px !important; background-color: transparent; margin-bottom: 0px;
+                                                max-height: 38px; border: 0px; text-indent: 32px; padding-left: 0px;
+                                                box-shadow: none; height: 33px !important; position: absolute; top: 15px; z-index: 1000;
+                                                line-height: 38px !important; margin-top: -5px;
+                }
+                
+                #delivery-custom-style select.c-adj05>option{ font-size: 16px; background-color: #fff; padding: 0px !important; border: 0px;
+                                                      position: absolute; top: 8px;
+                }
+                
+                </style>
+            
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <input type="text" placeholder="Set Your Price?" id="youremail"
+                    class="form-control c-adj6 price">
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 hover-adj2">
+                <button translate="home.search_top_go_btn" type="#" class="btn btn-default c-adj7"
+                    onclick="$('#target').toggle();">GO</button>
+            </div>
+
+
+            <form id="target" action="#" style="display: none" class="login-popup2 login-popup col-lg-3">
+                <h4  translate="home.not_signed_in">Ohps, you are not Signed in Yet!</h4>
+                <label translate="home.label_signed_in">Sign In</label>
+                <input type="text" placeholder="Your Email" id="youremail" class="form-control"> 
+                <input type="password" placeholder="Password" id="password" class="form-control">
+                
+                <label translate="home.register_new_user" class="margin-adj">Or, Register as new user</label>
+                <input type="text" placeholder="Your email is all we need " id="youremail" class="form-control" >
+                <button translate="home.signin_go" class="btn btn-default c-adj1" type="submit">GO</button>
+                <p translate="home.register_policy" class="uterm">By registering I approve FriendSand’s 
+                    <a translate="home.user_policy_link" href="#">User Policy, Terms,</a> <span translate="home.register_policy_and">and </span>
+                    <a translate="home.privacy_policy_link" href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 translate="home.about_us_heading" class="page-header">About Us</h1>
+            <p translate="home.aboutt_us_content" class="page-content">
+                FriendSend is a door-to-door shipping service available 24/7 every
+                day of the year.<br /> You can send absolutely anything, anywhere -
+                within your city, from one city to another or to the other side of
+                the world. <br />It's cheap, convenient, and a lot of fun.
+            </p>
+        </div>
+        <div class="col-lg-12">
+            <h1 class="page-header" translate="home.how_works">How it Works</h1>
+        </div>
+        <div class="col-md-4 text-center hiw">
+            <img src="images/Images_01.png" alt="How it works" class="img-circle "> <br />
+            <br />
+            <h4 translate="home.shipment_request_heading">1. Create A Shipment Request</h4>
+            <p translate="home.shipment_request_content">Let us know what, when, and where it needs to go and then...
+                wait for it. It's that simple!</p>
+
+        </div>
+        <div class="col-md-4 text-center hiw">
+            <img src="images/icon.png" alt="How it works" class="img-circle ">
+            <br />
+            <br />
+            <h4 translate="home.courier_request_heading">2. Select A Courier</h4>
+
+            <p translate="home.courier_request_content">We will find people within the FriendSend community whom are
+                travelling in the same direction as your stuff.</p>
+
+        </div>
+        <div class="col-md-4 text-center hiw">
+            <img src="images/hiw-3.jpg" alt="How it works" class="img-circle ">
+            <br />
+            <br />
+            <h4 translate="home.deliver_door_heading">3. Have It Delivered To Your Door</h4>
+            <p translate="home.deliver_door_content">Meet the courier at a gas station, parking lot or have your stuff
+                delivered to the front door.<br />It's that convenient!
+            </p>
+
+        </div>
+        <div class="col-lg-12 text-center">
+            <!-- a translate="home.aboutsus_learn_more" class="btn btn-primary red-outline-btn" href="sending.html">Learns More</a-->
+            <span translate="home.aboutsus_learn_more" class="btn btn-primary red-outline-btn" ng-click="loadSending()">Learns More</span>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+
+<!-- movement -->
+<div class="movement">
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row" id="items-shipment-carousel">
+            <h1 translate="home.carousel_shipment_heading" class="page-header2">Items Waiting For Shipment</h1>
+
+            <!-- ul class="bxslider">
+                        <li><img src="images/cimg-1.jpg" class="img-responsive" /><div class="price-tag">$200</div><div class="text-adj">Husky, Provo to Las Vegas, within a week. <br><br><a href="#" class="text-adj2">View More</a></div></li>
+                        <li><img src="images/cimg-2.jpg" class="img-responsive" /><div class="price-tag">$100</div><div class="text-adj">Moped, Orem to Saint George, Within a month.<br><br><a href="#" class="text-adj2">View More</a></div></li>
+                        <li><img class="img-responsive" src="images/cimg-3.jpg" /><div class="price-tag">$50</div><div class="text-adj">Air compressor, Salt Lake city to Las Vegas, Within a week.<br><a href="#" class="text-adj2">View More</a></div></li>
+                        <li><img class="img-responsive" src="images/cimg-4.jpg" /><div class="price-tag">$120</div><div class="text-adj">Kitchen Cabinett, Provo to Park City, Today.<br><br><a href="#" class="text-adj2">View More</a></div></li>
+                        <li><img class="img-responsive" src="images/cimg-1.jpg" /><div class="price-tag">$200</div><div class="text-adj">Neque porro quisquam est qui dolorem ipsum<br><br><a href="#" class="text-adj2">View More</a></div></li>
+                        <li><img class="img-responsive" src="images/cimg-2.jpg" /><div class="price-tag">200</div><div class="text-adj">Neque porro quisquam est qui dolorem ipsum<br><br><a href="#" class="text-adj2">View More</a></div></li>
+                    </ul-->
+
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/cimg-1.jpg" class="img-responsive" />
+                    <div class="price-tag">$200</div>
+                    <div class="text-adj">Husky, Provo to Las Vegas, within a week. <br><br>
+                        <a translate="home.carousel_shipment_item_label" href="#" class="text-adj2">View More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/cimg-2.jpg" class="img-responsive" />
+                    <div class="price-tag">$100</div>
+                    <div class="text-adj">Moped, Orem to Saint George, Within a month. <br> <br>
+                        <a translate="home.carousel_shipment_item_label" href="#" class="text-adj2">View More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/cimg-3.jpg" />
+                    <div class="price-tag">$50</div>
+                    <div class="text-adj">Air compressor, Salt Lake city to Las Vegas, Within a week.<br><br>
+                        <a translate="home.carousel_shipment_item_label" href="#" class="text-adj2">View More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/cimg-4.jpg" />
+                    <div class="price-tag">$120</div>
+                    <div class="text-adj">Kitchen Cabinett, Provo to Park City, Today.<br><br>
+                        <a translate="home.carousel_shipment_item_label" href="#" class="text-adj2">View More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/cimg-1.jpg" />
+                    <div class="price-tag">$200</div>
+                    <div class="text-adj">Neque porro quisquam est qui dolorem ipsum<br><br>
+                        <a translate="home.carousel_shipment_item_label" href="#" class="text-adj2">View More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/cimg-2.jpg" />
+                    <div class="price-tag">200</div>
+                    <div class="text-adj">Neque porro quisquam est qui dolorem ipsum<br><br>
+                        <a translate="home.carousel_shipment_item_label" href="#" class="text-adj2">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customNavigation">
+                <a id="owl-btn-prev">Previous</a>
+                <a id="owl-btn-next">Next</a>
+                <!-- a id="owl-btn-play">Autoplay</a>
+                <a id="owl-btn-stop">Stop</a -->
+            </div>
+
+            <script>
+                var owl = $("#owl-demo");
+
+                owl.owlCarousel({
+                    pagination : false,
+                    dots : true,
+                    items : 4, //4 items above 1000px browser width
+                    itemsDesktop : [ 1000, 5 ], //5 items between 1000px and 901px
+                    itemsDesktopSmall : [ 900, 3 ], // betweem 900px and 601px
+                    itemsTablet : [ 600, 2 ], //2 items between 600 and 0
+                    itemsMobile : false
+                // itemsMobile disabled - inherit from itemsTablet option
+                });
+
+                // Custom Navigation Events
+                $("#owl-btn-next").click(function() {
+                    owl.trigger('owl.next');
+                })
+                $("#owl-btn-prev").click(function() {
+                    owl.trigger('owl.prev');
+                })
+                /*$("#owl-btn-play").click(function(){
+                 owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+                 })
+                 $("#owl-btn-stop").click(function(){
+                 owl.trigger('owl.stop');
+                 })*/
+                 
+            </script>
+        </div>
+    </div>
+</div>
+<!-- courier-->
+
+<!-- Second header Carousel -->
+<header id="myCarousel2" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <!--li data-target="#myCarousel2" data-slide-to="2"></li-->
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill"
+                style="background-image: url('images/background-pic_02.jpg');"></div>
+            <div class="carousel-caption c-adj8">
+                <h2 translate="home.down_slider_slide1_text1" style="color: white;">Roadtrip Magic</h2>
+                <a name="deliver"></a>
+                <p translate="home.down_slider_slide1_text2">Become a courier<br />Share your route</p>
+                <!-- <p style="color:white;">Let us know when and where 
+                            your are traveling next.</p> -->
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image: url('images/01.jpg');"></div>
+            <div class="carousel-caption c-adj8">
+                <h2 translate="home.down_slider_slide2_text1" style="color: white;">Help Your Local Stores</h2>
+                <p translate="home.down_slider_slide2_text2">With Home Deliveries!</p>
+            </div>
+        </div>
+        <!-- <div class="item">
+                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                    <div class="carousel-caption">
+                        <h2>Caption 3</h2>
+                    </div>
+                </div>-->
+    </div>
+
+    <!-- Controls -->
+    <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a> -->
+
+    <script>
+        jQuery(document).ready(function($) {
+        
+        	$('header#myCarousel2.carousel').height($('body').height());
+        	
+        });
+    </script>
+    
+
+</header>
+
+    <!--Second search -->
+    <div class="search">
+        <div class="container">
+        
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            
+            <a id="text-fields-deliver"></a>
+            
+            <div class="col-lg-2 hidden-md hidden-sm">&nbsp;</div>
+            
+            <div class="col-lg-2 col-md-3 col-sm-3">
+                <input type="text" placeholder="From What City?" id="youremail" class="form-control c-adj4 location2">
+                <span translate="home.bottom_search_share_route" class="pos-2">Share your route :</span><br>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3">
+                <input type="text" placeholder="To What City?" id="youremail" class="form-control c-adj4 location2">
+            </div>
+            
+            <div id="abc" class="col-lg-2 col-md-4 col-sm-4 pos-rel travel-custom-style">
+                <!--select class="form-control c-adj06 selectpicker show-tick" id="basic"-->
+                <select class="form-control c-adj06  show-tick" id="basic">
+                    <option value="" disabled selected translate="home.bottom_search_travel_when">Travel When?</option>
+                    <option translate="home.bottom_search_anytime">Anytime</option>
+                    <option translate="home.bottom_search_today">Today</option>
+                    <option translate="home.bottom_search_within_week">Within a week</option>
+                    <option translate="home.bottom_search_within_month">Within a month</option>
+                </select>
+            </div>
+            
+            <style>
+                #abc.travel-custom-style{ background-color: transparent;
+                                    background: url(images/travel-search-bg2.png) no-repeat 7px 13px;
+                                    background-size: 150px auto;
+                                    padding: 0px;
+                                    margin: 0px 15px;
+                                    width: 165px;
+                                    background-color: rgb(243, 243, 243);
+                                    border-color: rgb(235, 235, 235);
+                                    border: 1px solid #ebebeb;
+                                    border-radius: 2px;
+                                    box-shadow: 0 0 0 rgba(0, 0, 0, 0.075) inset;
+                                    overflow: hidden;
+                }
+                
+                #abc.travel-custom-style select{ padding-left: 34px; width: 180px !important; background-color: transparent;
+                                            margin-bottom: 0px; max-height: 48px; border: 0px;
+                }
+                
+                #abc.travel-custom-style select>option{ font-size: 16px; background-color: #fff; padding: 0px !important; border: 0px;
+                }
+                
+                </style>
+            
+            <div class="hover-adj col-lg-2 col-md-2 col-sm-2">
+                <button translate="home.bottom_search_go_btn" type="submit" class="btn btn-default c-adj9">GO</button>
+            </div>
+            
+            <div class="col-lg-1 hidden-md hidden-sm">&nbsp;</div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="col-lg-12">
+        <h1 translate="home.become_courier_heading" class="page-header text-adj3">Become A Courier</h1>
+    </div>
+    <div class="col-md-4 text-center hiw">
+        <img src="images/bac-1.jpg" alt="How it works" class="img-circle ">
+        <br />
+        <br />
+        <h4 translate="home.individual_bussiness_heading" class="orange-text">1. Individual or business</h4>
+        <p translate="home.individual_bussiness_text">Anyone can make money as a courier. Register with a valid email
+            and you're good to go. Find stuff to deliver within your City or find
+            deliveries that match your upcoming trip. It's that simple!
+        </p>
+    </div>
+    <div class="col-md-4 text-center hiw">
+        <img src="images/bac-2.jpg" alt="How it works" class="img-circle ">
+        <br />
+        <br />
+        <h4 translate="home.share_next_trip_heading" class="orange-text">2. Share your next trip</h4>
+        <p translate="home.share_next_trip_text">Let everyone know when you travel next. Simply share your trip
+            with the FriendSend community and we will match deliveries for you. It's super easy!
+        </p>
+    </div>
+    <div class="col-md-4 text-center hiw">
+        <img src="images/Home_page_Images_01.png" alt="How it works"
+            class="img-circle "> <br />
+        <br />
+        <h4 translate="home.make_deliver_smile_heading" class="orange-text">3. Make deliveries with a smile</h4>
+        <p translate="home.make_deliver_smile_text">Enjoy the satisfaction of helping someone else and make money at the same time, the best of two worlds.</p>
+
+    </div>
+
+</div>
+<br />
+<br />
+<br />
+
+<!-- testimonials-->
+<div class="container">
+    <div class="col-lg-12">
+        <h1 class="page-header text-adj4">Testimonials</h1>
+    </div>
+    <div class="col-md-3 text-center hiw">
+        <img src="images/testi-1.jpg" alt="How it works" class="img-circle ">
+        <h4 class="orange-text">Jay-Z</h4>
+        <p>&ldquo;FriendSend is the best that has happened to me.&rdquo;</p>
+
+    </div>
+    <div class="col-md-3 text-center hiw">
+        <img src="images/testi-2.jpg" alt="How it works" class="img-circle ">
+        <h4 class="orange-text">Grandma Nilsson</h4>
+        <p>&ldquo;I send stuff to my grand kids, stuff that i don't want
+            anymore.&rdquo;</p>
+
+    </div>
+    <div class="col-md-3 text-center hiw">
+        <img src="images/testi-3.jpg" alt="How it works" class="img-circle ">
+        <h4 class="orange-text">Jack Reacher</h4>
+        <p>&ldquo;I should have been a cool action hero in another
+            life.&rdquo;</p>
+
+    </div>
+
+    <div class="col-md-3 text-center hiw">
+        <img src="images/testi-4.jpg" alt="How it works" class="img-circle ">
+        <h4 class="orange-text">Jennifer Lopez</h4>
+        <p>&ldquo;Forget DHL, Fedex and the brown shorts delivery
+            guys.&rdquo;</p>
+    </div>
+</div>

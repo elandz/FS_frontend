@@ -1,0 +1,140 @@
+
+<div class="profile-page-content" ng-controller="ProfileController">
+
+    <div class="top-bg col-lg-12">
+        <h2 class="profile-text" translate="profile.top_heading">Your Personal Profile</h2>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row space-vertical-80">
+            <div class="col-lg-3 col-md-3 col-sm-4 profile-photo profile-left-column">
+                <a href="#" class="glyphicon glyphicon-user pp"></a>
+                <span  translate="profile.upload_photo">Upload a photo optional</span>
+                <a href="#" class="browse-btn"  translate="profile.browse_photo_btn">Browse</a>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 profile-right-column">
+                <div class="row">
+                    <div class="marbot-twenty clearfix">
+                        <label class="col-lg-3 col-md-3" translate="profile.details_name" >First Name</label>
+                        <div class="col-lg-7 col-md-7">
+                            <input type="text" placeholder="Claes" id="youremail" ng-model="user.firstName" class="form-control c-adj4">
+                        </div>
+                    </div>
+                    <div class="marbot-twenty clearfix">
+                        <label class="col-lg-3 col-md-3" translate="profile.details_name" >Last Name</label>
+                        <div class="col-lg-7 col-md-7">
+                            <input type="text" placeholder="Claes" id="youremail" ng-model="user.lastName" class="form-control c-adj4">
+                        </div>
+                    </div>
+                    <div class="marbot-twenty clearfix">
+                        <label class="col-lg-3 col-md-3" translate="profile.details_email">Email</label>
+                        <div class="col-lg-7 col-md-7">
+                            <input type="text" placeholder="Claes@friendsend.com" id="youremail" class="form-control c-adj4">
+                        </div>
+                    </div>
+                    <div class="marbot-twenty clearfix">
+                        <label class="col-lg-3 col-md-3" translate="profile.details_city">City</label>
+                        <div class="col-lg-7 col-md-7">
+                            <input type="text" placeholder="Provo" id="youremail" ng-model="user.location" class="form-control c-adj5 ">
+                        </div>
+                    </div>
+                    <div class="marbot-twenty clearfix">
+                        <label class="col-lg-3 col-md-3">&nbsp;</label>
+                        <div class="col-lg-7 col-md-7 cbox">
+                            <div class="col-sm-7 email-notification">
+                                <input type="checkbox" id="youremail" class="" ng-model="user.emailNotification">
+                                <span  translate="profile.bid_notification">Email Me When I Get A Bid or A Message</span>
+                            </div>
+                            <div class="col-sm-5 change-password">
+                                <a href="#" class="cpassword" translate="profile.change_password">Change Your Password</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="password" style="display: none;">
+                        
+                        <div class="marbot-twenty clearfix">
+                            <label class="col-lg-3 col-md-3" translate="profile.details_password">Password</label>
+                            <div class="col-lg-7 col-md-7">
+                                <input ng-model="password" type="password" placeholder="Password" id="youremail" class="form-control c-adj6">
+                            </div>
+                        </div>
+                        <div class="marbot-twenty clearfix">
+                            <label class="col-lg-3 col-md-3" translate="profile.details_repeat_password">Repeat Password</label>
+                            <div class="col-lg-7 col-md-7">
+                                <input  ng-model="rePassword" type="password" placeholder="Repeat Password" id="youremail" class="form-control c-adj6">
+                            </div>
+                        </div>
+                         <div class="marbot-twenty clearfix">
+                            
+                            <div class="col-lg-7 col-md-7">
+                                <a href="javascript:void(0)" ng-click="updatePassword()" class="sub-btn" translate="profile.details_update_name_save">Save</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="marbot-twenty clearfix">
+                        <label class="col-lg-3 col-md-3">&nbsp;</label>
+                        <div class="col-lg-7 col-md-7">
+                            <button translate="profile.details_update"
+                                    type="button"
+                                    class="btn btn-default c-adj7 update-btn"
+                                    data-toggle="modal"
+                                    data-target="#myModal">
+                                UPDATE
+                            </button>
+                        </div>
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog adj-16">
+                                <!-- Modal content-->
+                                <div class="modal-content adj-17">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title" translate="profile.details_update_name">Please enter your name</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input type="text" class="form-control" id="usr" placeholder="Full Name">
+                                        <a href="javascript:void(0)" ng-click="updateUser()" class="sub-btn" translate="profile.details_update_name_save">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    
+    /*$(document).ready(function(){
+         $('.cl').on('hidden.bs.collapse', function () {  })
+     })
+     
+     $(function() {
+         $('.cl').on('click',function() {
+             $(this).closest('.dropdown-menu').addClass('animated pulse')
+         });
+     });*/
+     
+</script>
+    
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+
+        $(".cpassword").click(function (event) {
+            event.preventDefault();
+        });
+
+        $(".password").slideUp();
+
+        $(".cpassword").click(function () {
+            $(this).closest('.marbot-twenty').next('.password').slideToggle();
+        });
+    });
+
+
+</script>
+
